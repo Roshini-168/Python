@@ -1,6 +1,11 @@
-x=int(input())
-y=int(input())
-if((x/2)<=y):
-    print("IN")
+n=int(input())
+ns=str(n)
+l=len(ns)
+t=0
+for i in range(l):
+  t+=int(ns[i])**(i+1)
+if t==n:
+  print("Yes")
 else:
-    print("OUT")
+  print("No")
+  
